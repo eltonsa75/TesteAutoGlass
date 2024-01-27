@@ -1,4 +1,5 @@
-﻿using EmprestimoLivros.Interfaces;
+﻿using EmprestimoLivros.DTO;
+using EmprestimoLivros.Interfaces;
 using EmprestimoLivros.Models;
 using EmprestimoLivros.Repository;
 using Microsoft.AspNetCore.Mvc;
@@ -73,7 +74,18 @@ namespace EmprestimoLivros.Controllers
                 return NotFound("Cliente não encontrado.");
             }
 
-            return Ok(cliente);
+            ClienteDTO clienteDTO = new ClienteDTO
+            {
+                Bairro = cliente.Bairro,
+                Cidade = cliente.Cidade,
+                Cpf = cliente.Cpf,
+                Endereco = cliente.Endereco,
+                Nome = cliente.Nome,
+                Id = cliente.Id
+
+            };
+
+            return Ok(clienteDTO);
         }
 
         

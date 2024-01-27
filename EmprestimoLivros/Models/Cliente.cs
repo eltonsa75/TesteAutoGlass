@@ -13,27 +13,27 @@ public partial class Cliente
     [Key]
     [Column("id")]
     public int Id { get; set; }
-
+    [Required]
     [Column("CPF")]
     [StringLength(14)]
     [Unicode(false)]
     public string Cpf { get; set; }
-
+    [Required]
     [Column("nome")]
     [StringLength(100)]
     [Unicode(false)]
     public string Nome { get; set; }
-
+    [Required]
     [Column("endereco")]
     [StringLength(50)]
     [Unicode(false)]
     public string Endereco { get; set; }
-
+    [Required]
     [Column("cidade")]
     [StringLength(50)]
     [Unicode(false)]
     public string Cidade { get; set; }
-
+    [Required]
     [Column("bairro")]
     [StringLength(50)]
     [Unicode(false)]
