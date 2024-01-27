@@ -24,7 +24,9 @@ namespace EmprestimoLivros.Controllers
         [HttpGet()]
         public async Task<ActionResult<IEnumerable<Cliente>>> GetClientes()
         {
-            return Ok(await _clienteRepository.SelecionarTodos());
+            var clientes = await _clienteRepository.SelecionarTodos();
+            var clientesDTO = _mapper.Map<IEnumerable<ClienteDTO>>(clientes);
+            return Ok(clientesDTO);
         }
 
         [HttpPost]

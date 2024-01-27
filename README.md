@@ -25,6 +25,7 @@ AutoMapper = é uma biblioteca em C# que facilita a correspondência entre os ob
 ![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
 ![Entity Framework](https://img.shields.io/badge/Entity_Framework-512BD4?style=for-the-badge&logo=entity-framework&logoColor=white)
 ![DTO](https://img.shields.io/badge/DTO-239120?style=for-the-badge&logo=c-sharp&logoColor=white)
+![AutoMapper](https://img.shields.io/badge/AutoMapper-2196F3?style=for-the-badge&logo=autoMapper&logoColor=white)
  [![GitHub](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=f8f9fa)](https://docs.github.com/)
 
  </div>
