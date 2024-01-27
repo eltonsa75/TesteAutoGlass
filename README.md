@@ -8,6 +8,8 @@ ASP NET CORE C#
 
 DTO = Data Transfer Object
 
+AutoMapper = é uma biblioteca em C# que facilita a correspondência entre os objetos de transferência de dados (DTOs) e os modelos de domínio. 
+
 <div align="center">
 
 [![Perfil DIO](https://img.shields.io/badge/-Meu%20Perfil%20na%20DIO-30A3DC?style=for-the-badge)](https://web.dio.me/users/eltonsa75?tab=achievements) 
