@@ -1,5 +1,6 @@
 
 using EmprestimoLivros.Interfaces;
+using EmprestimoLivros.Mappings;
 using EmprestimoLivros.Models;
 using EmprestimoLivros.Repository;
 using Microsoft.EntityFrameworkCore;
@@ -30,6 +31,7 @@ namespace EmprestimoLivros
                 );
 
             builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
+            builder.Services.AddAutoMapper(typeof(EntitiesToDTOMappingProfile));
 
             var app = builder.Build();
 

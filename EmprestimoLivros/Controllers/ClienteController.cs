@@ -1,4 +1,5 @@
-﻿using EmprestimoLivros.DTO;
+﻿using AutoMapper;
+using EmprestimoLivros.DTO;
 using EmprestimoLivros.Interfaces;
 using EmprestimoLivros.Models;
 using EmprestimoLivros.Repository;
@@ -11,9 +12,12 @@ namespace EmprestimoLivros.Controllers
     public class ClienteController : Controller
     {
         private readonly IClienteRepository _clienteRepository;
+        private readonly IMapper _mapper;
 
-        public ClienteController(IClienteRepository clienteRepository)
+
+        public ClienteController(IClienteRepository clienteRepository, IMapper mapper)
         {
+            _mapper = mapper;
             _clienteRepository = clienteRepository;
         }
 
@@ -74,16 +78,7 @@ namespace EmprestimoLivros.Controllers
                 return NotFound("Cliente não encontrado.");
             }
 
-            ClienteDTO clienteDTO = new ClienteDTO
-            {
-                Bairro = cliente.Bairro,
-                Cidade = cliente.Cidade,
-                Cpf = cliente.Cpf,
-                Endereco = cliente.Endereco,
-                Nome = cliente.Nome,
-                Id = cliente.Id
-
-            };
+            var clienteDTO = _mapper.Map<ClienteDTO>(cliente);
 
             return Ok(clienteDTO);
         }
