@@ -30,9 +30,11 @@ namespace EmprestimoLivros.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> CadastrarCliente(Cliente cliente)
+        public async Task<ActionResult> CadastrarCliente(ClienteDTO clienteDTO)
         {
-             _clienteRepository.Incluir(cliente);
+
+            var cliente = _mapper.Map<Cliente>(clienteDTO);
+            _clienteRepository.Incluir(cliente);
             if(await _clienteRepository.SaveAllAsync())
             {
                 return Ok("Cliente cadastrado com Sucesso!");
@@ -41,8 +43,20 @@ namespace EmprestimoLivros.Controllers
             return BadRequest("Ocorreu um erro ao salvar o cliente. ");
         }
         [HttpPut]
-        public async Task<ActionResult> AlterarCliente(Cliente cliente)
+        public async Task<ActionResult> AlterarCliente(ClienteDTO clienteDTO)
         {
+            if(clienteDTO.Id == null)
+            {
+                return BadRequest("Não foi possivel alterar os dados do cliente, precisa informar o ID.");
+            }
+
+            var clienteExitente = await _clienteRepository.SelecionarByPK(clienteDTO.Id);
+            if(clienteExitente == null)
+            {
+                return NotFound("Esse cliente não existe");
+            }
+
+            var cliente = _mapper.Map<Cliente>(clienteDTO);
             _clienteRepository.Alterar(cliente);
 
             if ( await _clienteRepository.SaveAllAsync()) {

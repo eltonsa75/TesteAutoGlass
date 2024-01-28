@@ -3,7 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmprestimoLivros", "EmprestimoLivros\EmprestimoLivros.csproj", "{B899F5AF-1B69-4A5F-B6CD-E32352F69C25}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmprestimoLivros", "EmprestimoLivros\EmprestimoLivros.csproj", "{B899F5AF-1B69-4A5F-B6CD-E32352F69C25}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmprestimoLivros.Domain", "EmprestimoLivros.Domain\EmprestimoLivros.Domain.csproj", "{5FEBF651-6EFC-45BF-B95D-A607703CE2C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmprestimoLivros.Infra.Data", "EmprestimoLivros.Infra.Data\EmprestimoLivros.Infra.Data.csproj", "{CC3C132D-F327-431F-BC55-FDC76D3CD597}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmprestimoLivros.Infra.Ioc", "EmprestimoLivros.Infra.Ioc\EmprestimoLivros.Infra.Ioc.csproj", "{43EF36B4-C436-4A08-AA0A-9CFA84205F77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmprestimoLivros.Application", "EmprestimoLivros.Application\EmprestimoLivros.Application.csproj", "{04A410B5-86B2-4E69-8081-C843DDCFAC37}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +23,22 @@ Global
 		{B899F5AF-1B69-4A5F-B6CD-E32352F69C25}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B899F5AF-1B69-4A5F-B6CD-E32352F69C25}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B899F5AF-1B69-4A5F-B6CD-E32352F69C25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FEBF651-6EFC-45BF-B95D-A607703CE2C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FEBF651-6EFC-45BF-B95D-A607703CE2C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FEBF651-6EFC-45BF-B95D-A607703CE2C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FEBF651-6EFC-45BF-B95D-A607703CE2C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC3C132D-F327-431F-BC55-FDC76D3CD597}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC3C132D-F327-431F-BC55-FDC76D3CD597}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC3C132D-F327-431F-BC55-FDC76D3CD597}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC3C132D-F327-431F-BC55-FDC76D3CD597}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43EF36B4-C436-4A08-AA0A-9CFA84205F77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43EF36B4-C436-4A08-AA0A-9CFA84205F77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43EF36B4-C436-4A08-AA0A-9CFA84205F77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43EF36B4-C436-4A08-AA0A-9CFA84205F77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04A410B5-86B2-4E69-8081-C843DDCFAC37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04A410B5-86B2-4E69-8081-C843DDCFAC37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04A410B5-86B2-4E69-8081-C843DDCFAC37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04A410B5-86B2-4E69-8081-C843DDCFAC37}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
