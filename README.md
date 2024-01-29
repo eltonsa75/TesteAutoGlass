@@ -10,6 +10,18 @@ DTO = Data Transfer Object
 
 AutoMapper = é uma biblioteca em C# que facilita a correspondência entre os objetos de transferência de dados (DTOs) e os modelos de domínio. 
 
+
+## Criando CLEAR ARCHITECTURE NO PROJETO
+
+Facilidades de manuntenção
+
+Camadas com responsabilidades
+
+Independente do banco
+
+Mais organização
+
+
 <div align="center">
 
 [![Perfil DIO](https://img.shields.io/badge/-Meu%20Perfil%20na%20DIO-30A3DC?style=for-the-badge)](https://web.dio.me/users/eltonsa75?tab=achievements) 
